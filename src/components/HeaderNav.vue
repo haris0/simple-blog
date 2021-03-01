@@ -4,6 +4,7 @@
       color="blue darken-3"
       dense
       dark
+      class="fix"
     >
       <v-container>
         <v-toolbar-title>{{title}}</v-toolbar-title>
@@ -18,3 +19,9 @@
     props: ['title']
   }    
 </script>
+<style scoped>
+  .fix{
+    position: fixed;
+    z-index: 500;
+  }
+</style>

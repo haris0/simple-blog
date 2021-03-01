@@ -1,9 +1,19 @@
 <template>
   <div>
     <HeaderNav title="Indonesian News" />
+    <div class="banner"></div>
     <v-container>
       <ArticelCard :articels="headlines"></ArticelCard>
     </v-container>
+    <div class="load-more">
+      <v-btn
+        rounded
+        color="primary"
+        dark
+      >
+        Load More News
+      </v-btn>
+    </div>
   </div>
 </template>
 
@@ -40,4 +50,16 @@
   }
 </script>
 <style scoped>
+  .banner{
+    margin-top: 48px;
+    height: 15em;
+    background-image: url("../assets/banner.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .load-more{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
 </style>
