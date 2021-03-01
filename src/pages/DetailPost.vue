@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    Detail {{id}}
+    Detail
   </v-container>
 </template>
 
@@ -8,14 +8,14 @@
   let self;
   export default {
     name: 'Detail',
+    props: ["articel"],
     created(){
       self = this;  
     },
     components: {
     },
     mounted(){
-      self.id = self.$route.params.id;
-      console.log(self.id)
+      console.log(self.articel)
     },
     data:()=>({
       id:0,
