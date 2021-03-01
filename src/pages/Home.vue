@@ -1,14 +1,14 @@
 <template>
-  <v-container>
-    Home
-  </v-container>
+  <HeaderNav title="Indonesian News" />
 </template>
 
 <script>
+  import HeaderNav from '@/components/HeaderNav.vue'
   export default {
     name: 'Home',
 
     components: {
+      HeaderNav
     },
     mounted(){
     },
