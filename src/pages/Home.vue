@@ -52,7 +52,7 @@
         console.log(response)
       },
       goToList:()=>{
-        router.push({name: 'List', params: {page:1}})
+        router.push({name: 'List'})
       }
     }
   }
