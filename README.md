@@ -1,6 +1,6 @@
 # simple-blog
 
-Application to display news list, the data used is sourced from [NEWS API](https://newsapi.org/s/indonesia-news-api). This project was developed using Vue Js.
+Application to display news list, the data used is sourced from [NEWS API](https://newsapi.org/s/indonesia-news-api). This project was developed using Vue Js. You can see the demo app at [Simple News](https://simple-news-id.netlify.app/)
 
 
 ## Preview
