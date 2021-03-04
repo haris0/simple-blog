@@ -1,24 +1,33 @@
 # simple-blog
 
-## Project setup
-```
+Application to display news list, the data used is sourced from [NEWS API](https://newsapi.org/s/indonesia-news-api). This project was developed using Vue Js.
+
+
+## Preview
+![page1](./Preview1.PNG)
+
+![page2](./Preview2.PNG)
+
+![page3](./Preview3.PNG)
+
+
+## Build Setup
+
+``` bash
+# install Node Module dependencies
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+# serve with hot reload at localhost:8080
 npm run serve
-```
 
-### Compiles and minifies for production
-```
+# build for production with minification
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Technologies
+This project uses several technologies listed below :
+
+- **[Vuetify](https://vuetifyjs.com/en/)** is a Material Design component framework for Vue.js
+- **[Axios](https://github.com/axios/axios)** is dependencies for Apis Consuming
+- **[Vue Router](https://router.vuejs.org/)** is the official router for Vue.js

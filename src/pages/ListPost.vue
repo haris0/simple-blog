@@ -15,7 +15,7 @@
       >
         Prev
       </v-btn>
-      <v-btn v-if="page <= pageCount -1"
+      <v-btn v-if="page <= pageCount-1"
         rounded
         color="primary"
         dark
@@ -46,6 +46,7 @@
       SkeletonList
     },
     mounted(){
+      self.page = 1
       self.fetchHeadlines()
     },
     data:()=>({
