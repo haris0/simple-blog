@@ -10,9 +10,15 @@
       <br><br>
       <p class="content" v-html="articel.content"></p>
       <p class="content" v-html="lorem"></p>
-      <p>Source: 
-        <a :href="articel.url" target="_blank">Link</a>
-      </p>
+      <div class="footer">
+        <p style="float:left;">
+          Source: 
+          <a :href="articel.url" target="_blank">Link</a>
+        </p>
+        <div style="float:right;" v-if="webShareApiSupported">
+          <button @click="shareViaWebShare">Share</button>
+        </div>
+      </div>
     </v-container>
   </div>
 </template>
@@ -38,7 +44,9 @@
       lorem:lorem
     }),
     computed: {
-     
+      webShareApiSupported() {
+        return navigator.share
+      }
     },
     methods:{
       formatedDate : (dateStr)=>{
@@ -48,6 +56,13 @@
         let date = dateFull.getDate()
         let monthsIdx = dateFull.getMonth()
         return date+" "+months[monthsIdx]+" "+year
+      },
+      shareViaWebShare : ()=> {
+        navigator.share({
+          title: self.articel.title,
+          text: self.articel.description,
+          url: self.articel.url
+        })
       }
     }
   }
